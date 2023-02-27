@@ -5,8 +5,6 @@ vector <User> UsersFile::readUsersFromFile()
     User user;
     vector <User> users;
 
-    CMarkup xml;
-
     bool fileExists = xml.Load(USERS_FILE_NAME);
 
     if (!fileExists)
@@ -48,7 +46,6 @@ vector <User> UsersFile::readUsersFromFile()
 
 void UsersFile::saveUserToFile(User user)
 {
-    CMarkup xml;
     xml.Load(USERS_FILE_NAME);
 
     xml.FindElem();                 // przechodzi do galezi glownej "USERS"
@@ -68,7 +65,6 @@ void UsersFile::saveUserToFile(User user)
 
 void UsersFile::changePassword(int loggedUserId, string newPassword, User user )
 {
-    CMarkup xml;
     xml.Load(USERS_FILE_NAME);
 
     xml.FindElem();                 // przechodzi do galezi glownej "USERS"

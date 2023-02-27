@@ -437,13 +437,6 @@ void TransferManager::sortIncomesByDate()
     //sort(incomes.begin(), incomes.end(), compareIncomes);
 }
 
-bool TransferManager::compareExpenses(Expenses expense1, Expenses expense2)
-{
-  int dateInt1 = HelpMethods::convertStringToInt( expense1.getDate() );
-  int dateInt2 = HelpMethods::convertStringToInt( expense2.getDate() );
-  return dateInt1 > dateInt2;
-}
-
 void TransferManager::sortExpensesByDate()
 {
     //sort(expenses.begin(), expenses.end(), compareExpenses);

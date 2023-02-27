@@ -14,6 +14,7 @@ using namespace std;
 class UsersFile
 {
     const string USERS_FILE_NAME;
+    CMarkup xml;
 
     User getUserData();
 

@@ -60,7 +60,6 @@ class TransferManager
     void sortIncomesByDate();
     bool compareIncomes(Incomes income1, Incomes income2);
     void sortExpensesByDate();
-    bool compareExpenses(Expenses expense1, Expenses expense2);
 
 public:
     TransferManager (string incomesFileName, string expensesFileName, int loggedUserId)
