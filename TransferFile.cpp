@@ -5,7 +5,6 @@ vector <Incomes> TransferFile::readLoggedUserIncomesFromFile (int loggedUserId)
 {
     Incomes income;
     vector <Incomes> incomes;
-
     CMarkup xml;
 
     bool fileExists = xml.Load(INCOMES_FILE_NAME);
@@ -59,7 +58,6 @@ vector <Expenses> TransferFile::readLoggedUserExpensesFromFile(int loggedUserId)
     vector <Expenses> expenses;
 
     CMarkup xml;
-
     bool fileExists = xml.Load(EXPENSES_FILE_NAME);
 
     if (!fileExists)
@@ -118,6 +116,7 @@ int  TransferFile::getLastExpenseId()
 void TransferFile::addIncomeToFile(Incomes income)
 {
     lastIncomeId++;
+
     CMarkup xml;
     xml.Load(INCOMES_FILE_NAME);
 
