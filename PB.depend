@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1673813740 source:c:\users\rtuja\c++\personalbudget\markup.cpp
+	<stdio.h>
+	"Markup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1673813738 c:\users\rtuja\c++\personalbudget\markup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+
