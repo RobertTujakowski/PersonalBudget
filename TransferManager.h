@@ -28,7 +28,6 @@ class TransferManager
     vector <Expenses> expenses;
     TransferFile transferFile;
     int loggedUserId;
-    int lastIncomeId;
 
     string convertDateIntToString(int date);
     string changeCommaToDot(string incomeTxt);
