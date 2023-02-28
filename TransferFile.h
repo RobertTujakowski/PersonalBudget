@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <windows.h>
+#include "Markup.h"
 
 #include "Incomes.h"
 #include "Expenses.h"
@@ -17,6 +18,7 @@ class TransferFile
     const string EXPENSES_FILE_NAME;
     int lastIncomeId;
     int lastExpenseId;
+    CMarkup xml;
 
 public:
     TransferFile(string incomesFileName, string expensesFileName)

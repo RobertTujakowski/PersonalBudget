@@ -28,7 +28,6 @@ class TransferManager
     vector <Expenses> expenses;
     TransferFile transferFile;
     int loggedUserId;
-    int lastIncomeId;
 
     string convertDateIntToString(int date);
     string changeCommaToDot(string incomeTxt);
@@ -58,7 +57,6 @@ class TransferManager
 
     void sortIncomesAndExpenses();
     void sortIncomesByDate();
-    bool compareIncomes(Incomes income1, Incomes income2);
     void sortExpensesByDate();
 
 public:

@@ -425,21 +425,20 @@ void TransferManager::balanceSelectedPeriod()
     system("pause");
 }
 
-bool TransferManager::compareIncomes(Incomes income1, Incomes income2)
-{
-  int dateInt1 = HelpMethods::convertStringToInt( income1.getDate() );
-  int dateInt2 = HelpMethods::convertStringToInt( income2.getDate() );
-  return dateInt1 > dateInt2;
-}
-
 void TransferManager::sortIncomesByDate()
 {
-    //sort(incomes.begin(), incomes.end(), compareIncomes);
+    sort(incomes.begin(), incomes.end(), [](Incomes lhs, Incomes rhs)
+    {
+        return lhs.getDate() < rhs.getDate();
+    });
 }
 
 void TransferManager::sortExpensesByDate()
 {
-    //sort(expenses.begin(), expenses.end(), compareExpenses);
+    sort(expenses.begin(), expenses.end(), [](Expenses lhs, Expenses rhs)
+    {
+        return lhs.getDate() < rhs.getDate();
+    });
 }
 
 void TransferManager::sortIncomesAndExpenses()
