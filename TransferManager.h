@@ -57,7 +57,6 @@ class TransferManager
 
     void sortIncomesAndExpenses();
     void sortIncomesByDate();
-    bool compareIncomes(Incomes income1, Incomes income2);
     void sortExpensesByDate();
 
 public:
